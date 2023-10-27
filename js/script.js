@@ -18,6 +18,12 @@ function newItem(){
 
     li.on('dblclick', crossOut);
 
+    let crossOutButton = $('<crossOutButton></crossOutButton>');
+
+    crossOutButton.append(document.createTextNode('x'));
+    li.append(crossOutButton)
+
+    crossOutButton.on('click', deleteListItem)
 
 
 
